@@ -55,6 +55,8 @@ func (app *application) buildTemplateFromDisk(t string) (*template.Template, err
 		log.Fatal(err)
 	}
 	fmt.Println("Current working directory:", dir)
+	fmt.Println("Template slice:", templateSlice)
+	fmt.Println("String t:", t)
 
 	tmpl, err := template.ParseFiles(templateSlice...)
 
